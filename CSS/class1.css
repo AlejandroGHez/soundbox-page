@@ -1,0 +1,37 @@
+/*CREACION DE CLASES DE ESTILO ADJUNTO
+Alejandro Garcia Hernandez 18/03/2021*/
+
+.baner{                             /*classe de tipo baner para poner titulo impactante y grande dentro de la pgaina*/
+        font-size: 80px;            /* modificacion de tamaño de letra*/
+        text-align: center;         /* modificacion de la posicion del texto*/
+        color: white;               /* modificacion del color de letra- blanco*/
+        font-weight: bold;
+        font-family: impact;        /* modificacion de estilo de letra de tipo impact*/
+}
+th{                                 /* clase modificada de th para encabezados de tablas*/
+  background-color: green;          /* fondo de tablas de tipo verde*/
+  color: white;                     /* color de letra blanco*/
+}
+table{                              /* clase modificada de table para estilo de la tabla*/
+      margin-top: 40px;             /* margen de tamaño de 40 px*/
+      margin-left: auto;            /* margen automatico para que no se mueva la minimizar ventana de lado izquierdo*/
+      margin-right: auto;           /* margen automatico para que no se mueva la minimizar ventana de lado derecho*/
+      border-collapse: collapse;    /* el margen colapsa y se pone pegado*/
+      color: white;                 /* color de las letras de la tabla blanco*/
+}
+td,th{                              /* clase modificada de filas de la tabla*/
+      border: 2px solid green;      /* borde de tamaño de dos pixeles y color verde */
+      padding-left: 20px;           /* tamaño izquiero de 20*/
+      padding-right: 20px;          /* tamaño derecho de 20*/
+      padding-top: 10px;            /* tamaño entre celdas de 10*/
+      padding-bottom: 10px;
+      color: white;                 /* color de texto blanco*/
+}
+
+.contacto{                          /* clase creada para generar un estilo */
+    font-size: 30px;                /* tamaño de letras de 30px*/
+    text-align: right;              /* posicion de de las letras en la derecha*/
+    color: white;                   /* color de  la letra blanco*/
+    font-weight: bold;
+    font-family: oblique;
+}

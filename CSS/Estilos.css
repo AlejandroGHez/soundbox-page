@@ -1,0 +1,212 @@
+
+        /*PRIMERA PARTE DE ESTILOS PARA DARLE FORMA Y COLORES AL FORMATO PRINCIPAL DEL CUERPO, ENCABEZADO, PIE DE PAGINA, IMAGENES Y ICONOS*/
+
+        *{                                             /*sirve para que todo adentro de la caja de formularios tenga un margen especifico*/
+          margin: 0;                                  /**/
+          padding: 0;
+          box-sizing: border-box;
+
+        }
+
+              body{                                 /*estilo para boddy*/
+                  background: #ABB2B9  ;      /*Fondo de color gris para representar tecnologia y no sobrecragar mucho el color negro*/
+                  font-family: Arial,Helvetica;     /*fuente de letra arial y helevtica por si no se encuentra una*/
+              }
+              .contenedor{                          /*estilo propio de caja para contenedor, en este se guarda un menu oara desplazarse en la pagina*/
+                width: 85%;                         /*tamaño del 70 porciento*/
+                margin: 0px auto;                   /*margen automatico para que lo centre lo mas posible*/}
+              .contenido{                           /*estilo propio de caja para guardar el contenido de la pagina*/
+                width: 85%;                         /*tamaño del 70 porciento*/
+                margin: 0px auto;                   /*margen automatico para que lo centre lo mas posible*/
+                text-align: left;                   /*texto alineado a la izquierda*/}
+
+              header{                               /*estilo para encabezado o baner*/
+                background-color: black;            /*fondo de color negro que simboliza elegancia y tecnologia*/
+                height: 110px;                      /*altura de 110 pixeles*/
+                width: 100%;                        /*anchura del tamaño del contenedor*/
+                font-size: 100px;                   /*tamaño de letra de 100 pixeles*/
+                color: white;                       /*color de letra blanco*/
+                text-align: center;                 /*texto alineado al centro*/
+                font-family: fantasy;               /*fuente de letra fantasy*/
+              }
+              .contenedor a{
+                color: white;
+                text-decoration: none;
+
+              }
+
+              nav ul li{                           /*estilos para listas que servira como menu*/
+                float: left;                       /*posicion flotante para que esten a un lado de la otra*/
+                list-style: none;                  /*estilo de lista ninguno*/
+                margin: 10px;                      /*margen o separacion de 10 pixeles*/
+
+
+              }
+
+              .clearspace{                        /*estilo para limpiar algunos valoes que vienen predterminados en algunas etiquetas*/
+                clear: both;
+              }
+
+              nav{                                /*estilo para nav que servira como caja para el muno*/
+                background: #424242;                /*color de fondo clanco*/
+                height: 50px;                     /*tamaño de 50 pixeles*/
+              }
+
+              footer{                             /*estilo para crear un pie de pagina de contacto*/
+                background: black;                /*color de fondo negro*/
+                color: green;                     /*color de letras verdes para que resalte la informacion*/
+                width: 85%;                       /*tamaño del 70%*/
+                margin: 0px auto;                 /*margen automatico del contenedor*/
+                margin-top: 100px;
+              }
+
+              .contenido img{                                /*estilo para imagenes que sirven como iconos*/
+                width: 20px;                      /*altura de 20px*/
+                height: 20px;                     /*anchura de 20 pixeles*/
+              }
+              .evento img{                        /*estilo de para imagen de un evento promocional que se mostrara al inico de la pagina*/
+                width: 500px;                     /*anchura de 500px */
+                height: 400px;                    /*altura de 400pixeles*/
+                margin: 0px auto;                 /*margen automatico del contenedor*/
+              }
+              .valores img{                       /*estilo de imagen para imagen que se muestra al inicio de la seccion de productos*/
+                width: 100%;                      /*anchura del 100%*/
+                height: 400px;                    /*altura de 400px*/
+                margin: 0px auto;                 /*margen autmatico del contendor*/
+              }
+              .contenedor-video{                  /*estilo para contenedor de video adentro de encontrara el video*/
+                position: relative;               /*posicion del video*/
+                padding-top: 56.25%;              /*formato de video*/
+                overflow: hidden;
+
+              }
+              .contenedor-video iframe{         /*estilo para tamaño de video*/
+                position: absolute;              /*posicion absoluta no se cambia al ampliar la pagina*/
+                top: 0;
+                left: 0;
+                width: 80%;                       /*altura del 80 porciento */
+                height: 80%;                      /*altura del 80 porciento*/
+              }
+              h2{                                 /*estilo para etiqueta h2*/
+                text-align: center;               /*texto centrado*/
+                font-size: 50px;                  /*tamaño de 50 px*/
+              }
+              .productos img{                     /*estilo para imagenes de productos*/
+                width: 200px;                     /*anchura de 200 pixeles*/
+                height: 180px;                    /*altura de 180 pixeles*/
+              }
+
+              table,th,td{                        /*estilo para tabla , filas y columnas*/
+                border: 1px;                      /*sin bordes y con borde de 1pixel*/
+                border-collapse: collapse;
+              }
+              th{                                /*estilo para filas*/
+                padding: 20px;                   /*separacion de 20pixeles*/
+              }
+
+
+                                      /*SEGUNDA PARTE DE ESTILOS PARA FROMULARIOS DE REGISTRO*/
+
+
+.compra{                                    /*clase de tipo compra*/
+
+  width: 70%;                               /*tamaaño del 70%*/
+  padding:150px;                            /**/
+  margin:  auto ;                           /*margen automatico*/
+  margin-top: 100px;                        /*margen superior de 100 px*/
+  border-radius: 4px;
+  font-family: 'calibri';                   /*fuente de letra calibri*/
+  color: white;                             /*color de letra blanco*/
+  margin-bottom: 100px;
+  background-color: #17202A;
+
+}
+
+.productos-stock {                            /*esta clase sirve para modificar los productos que se encuentran disponibles en el fromulario*/
+  height: 19px;
+  margin:auto;                                /*margen auto*/
+  text-align: center;
+  font-size: 17px;
+  line-height: 10px;
+  margin-top: 10px;                           /*margen superior de 10 px*/
+
+}
+
+.compra p{                                    /*esta clase sirev para la etiqueta p siempre que se use enn  la clase compra y sirve para los palabras que indican el formualrio que se llena */
+
+  height: 40px;
+  text-align: left;
+  font-size: 25px;
+  line-height: 20px;
+  margin-top: 20px;                            /*margen superior de 20 px*/
+}
+.compra h4{                                   /*clase para la etiqueta h4 que sirve como anuncio grande que indica la zona de compra de productos*/
+  font-size: 50px;
+  margin-bottom: 20px;                        /*margen inferiro de 20 pixeles*/
+  text-align: center;
+}
+
+.compra .boton{                                 /*clase creada para modificar el estilo de los botonoes con un colo azul y una froma diferente*/
+
+  background: #21618C;
+  border:none;
+  padding: 12px;
+  color: white;                                 /*color de letra blanco*/
+  margin: 16px 0;                            /*margen auto*/
+  font-size: 16px;
+}
+
+
+.registro{                                        /*clase creada para modificar funciones de la caja tio registro en donde el usuario pude registrarse a la pagina*/
+  width: 400px;
+  background: #17202A ;
+  padding: 50px;
+  margin:auto;                                /*margen auto*/
+  margin-top: 100px;                                /*margen superior de 100 px*/
+  border-radius: 4px;
+  font-family: 'calibri';                           /*fuente de letra calibri*/
+  color: white;                                     /*color de letra blanco*/
+  margin-bottom: 100px;
+}
+
+.registro h4 {                                /*clase para la etiqueta h4 que sirve como anuncio grande que indica la zona de compra de productos*/
+  font-size: 22px;
+  margin-bottom: 20px;                      /*margen auto*/
+
+}
+
+.diseños{                              /*esta etiqueta sirve para modificar los diseños de recuadros donde se ingresa la infromacion*/
+  width: 100%;
+  background: #17202A;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;                          /*margen auto*/
+  border: 1px solid #546E7A;
+  font-family: 'calibri';                          /*fuente de letra calibri*/fuente de letra calibri
+  font-size:18px;
+  color: white;                                   /*color de letra blanco*/
+
+}
+.registro p{                               /*esta clase sirev para la etiqueta p siempre que se use enn  la clase compra y sirve para los palabras que indican el formualrio que se llena */
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.registro a:hover {                                /*esta etiqueta sirve para que los enlaces de terminos y condiciones se muetsre en blanco al pasar el puntero*/
+  color: white;                                    /*color de letra blanco*/
+  text-decoration: underline;
+
+}
+
+.registro .boton{                              /*clase creada para modificar el estilo de los botonoes con un colo azul y una froma diferente*/
+  width: 100%;
+  background: #21618C;
+  border:none;
+  padding: 12px;
+  color: white;                                   /*color de letra blanco*/color de letra blanco
+  margin: 16px 0;                               /*margen auto*/
+  font-size: 16px;
+
+}

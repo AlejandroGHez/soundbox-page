@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+      /*Creamos una clase de tipo galeria que sera la principal caja que contenga la galeria
+      y la infromacion*/
+.galeria{
+
+  font-family: 'open sans';     /*fuente de letra open sans*/
+
+
+}
+
+.galeria h1{                          /*clase especial para los h1 dentro de la etiqueta de galeria*/
+  text-align: center;/*texto centrado*/
+  margin: 20px 0 15px 0; /*margen izquiero de 20 pixeles pargen central de arriba de 0 pixeles margen inferiror de 15 pixeles margen derecho de 0 pixeles*/
+  font-weight: 300;   /*tamaño de leytra de 300*/
+}
+
+/*Uso de pseudo elemento afcter para generar una linea o contenido despues de la etiqueta de hi*/
+.galeria h1::after{/*etiqueta unica para los h1 haiendo llamado al pseudo elemento*/
+  content: '';  /*sin contenido porque solo sera una linea*/
+  width: 180px;   /*anchura del 180 pixels*/
+  height: 4px;    /*altura de 4 pixeles*/
+  background: black;    /*fondo negro acorde al encabezado*/
+  display: block;       /*se genera un bloque*/
+  margin: auto;         /*margen automatico*/
+
+}
+
+  /*creacion de clase unica para un contendor que contendra las imagenes*/
+.contenedor-imagenes{
+  display: flex;                    /*etiqueta para alterar sus dimensiones en este caso del contendor*/
+  width: 85%;   /*anchura del 85 por ciento del padre*/
+  margin: auto; /*margen auto*/
+  justify-content: space-around;  /*justificasdo del contedio al rededor para que se acomoden las imagenes*/
+  flex-wrap: wrap;                /*especificacion para alterar a los hijos de la etiqueta*/
+  border-radius: 3px;             /*radio de imagen de 3 pixeles para que no sean cuadradas del todo*/
+
+}
+/*creacion de contenido de clase unica para la clase contendor que incluira la clase imagenes que contiene las imagenes*/
+.contenedor-imagenes .imagen{
+  width: 32%;                       /*tamaño del 32 por ciento del padre*/
+  position:relative;                /*psisicion relativa*/
+  height: 300px;                    /*anchura de 300 px*/
+  margin-bottom: 5px;                /*separacion de margen inferior de 5 pixeles */
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 075);
+}
+.imagen img{          /*etiqueta para modificar img dentro de nloque de imagen*/
+  width: 100%;        /*tamaño de imagen del 100 porciento del padre */
+  height: 100%;       /*anchura del 100 por ciento del padre*/
+  object-fit: cover;    /**/
+
+}
+/*etiqueta para creacion de efecto */
+.overlay{
+  position: absolute;     /*poiscion absoluta de la imagen*/
+  bottom: 0;              /*sin pie*/
+  left: 0;                /*sin espacio a la izquierda*/
+  background: #0A0B0C;    /*fondo negro*/
+  width: 100%;            /*anchura del 100 por ciento del padre*/
+  height: 0;              /*sin anchura*/
+  transition: 1s ease;    /*transicion de un segundo para el efecto*/
+  overflow: hidden;       /*para que aparezca cuando se posicione el curso*/
+
+}
+/*etiqueta para modificar texto dentor de imagen*/
+.overlay h2{                /**/
+  color: white;                 /*color blanco */
+  font-size: 30px;              /*tamaño de 30 px*/
+  position: absolute;           /*posicion absoluta*/
+  top: 50%;                     /*para centrar texto*/
+  left: 50%;                    /*para centrar texto*/
+  text-align: center;           /*para centrar texto*/
+  transform: translate(-50%,-50%);    /**/
+}
+    /*uso de pseudo clase para que se muestre el texto y el efecto cuando se posicione el curzor dentro de la etiqueta*/
+.imagen:hover .overlay{
+  height: 100%;             /*anchura del 100 por ciento es lo que aparecera una vez posicionado el cursor */
+  cursor: pointer;          /*cuando el cursos apunte a al imagen*/
+}
